@@ -1,0 +1,3 @@
+export const SELECT_INVOICE = "SELECT_INVOICE";
+export const SAVE_INVOICE = "SAVE_INVOICE";
+export const EDIT_MODE_TOGGLE = "EDIT_MODE_TOGGLE";
