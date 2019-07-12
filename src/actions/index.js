@@ -6,3 +6,9 @@ export const selectInvoice = invoice => {
     payload: invoice
   };
 };
+
+export const toggleEditMode = () => {
+  return {
+    type: EDIT_MODE_TOGGLE
+  };
+};

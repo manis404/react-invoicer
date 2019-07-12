@@ -7,7 +7,7 @@ import {
 
 const INITIAL_STATE = {
   loadedInvoices: [...dummyInvoiceData],
-  selectedInvoice: {},
+  selectedInvoice: dummyInvoiceData[0],
   editMode: false
 };
 
@@ -16,6 +16,8 @@ export default (state = INITIAL_STATE, action) => {
     case SELECT_INVOICE:
       return { ...state, selectedInvoice: action.payload };
       break;
+    case EDIT_MODE_TOGGLE:
+      return { ...state, editMode: !state.editMode };
     default:
       return state;
   }
